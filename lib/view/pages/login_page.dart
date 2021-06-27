@@ -127,9 +127,9 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget registerLoginButton() {
     return ButtonComponent(
-        color: StylesElements.colorSecondary,
+        color: StylesElements.colorPrimary,
         text: _isRegisterClicked ? "Registrarte" : "Iniciar sesión",
-        borderColor: StylesElements.colorSecondary,
+        borderColor: StylesElements.colorPrimary,
         function: () {
           // Se valida que los campos no se encuentren vacios
           if (_formKey.currentState.validate()) {
@@ -161,7 +161,8 @@ class _LoginPageState extends State<LoginPage> {
               });
             },
             child: Text(_isRegisterClicked ? "ingresa aquí" : "registrate aquí",
-                style: TextStyle(color: StylesElements.colorPrimary, fontWeight: FontWeight.bold)))
+                style:
+                    TextStyle(color: StylesElements.colorSecondary, fontWeight: FontWeight.bold)))
       ],
     );
   }

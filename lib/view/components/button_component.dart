@@ -23,9 +23,7 @@ class ButtonComponent extends StatelessWidget {
           fit: BoxFit.fitWidth,
           child: Text(
             this.text,
-            style: this.color == Colors.white
-                ? StylesElements.tsBoldBlack
-                : StylesElements.tsBoldWhite,
+            style: StylesElements.tsButtonBlack,
             textAlign: TextAlign.center,
           ),
         ),
