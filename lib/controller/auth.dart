@@ -48,7 +48,8 @@ class Auth {
 
       if (user != null) {
         Navigator.pushNamedAndRemoveUntil(context, 'splash', (route) => false);
-        ToastComponent.toastMessage(message: "Bienvenid(a) a Wacoservices.", isLong: false);
+        ToastComponent.toastMessage(
+            message: "Bienvenid(a) a RestaurApp by Mr.Bolat", isLong: false);
       }
     } on PlatformException catch (e) {
       // Retroalimentación

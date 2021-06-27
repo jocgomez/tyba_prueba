@@ -12,9 +12,9 @@ class StylesElements {
   // Texto en botones
   static TextStyle tsButtonBlack = new TextStyle(color: colorBlack, fontWeight: FontWeight.bold);
   // Texto bold
-  static TextStyle tsBoldGreen18 =
+  static TextStyle tsBoldPrimary18 =
       new TextStyle(color: colorPrimary, fontWeight: FontWeight.bold, fontSize: 18);
-  static TextStyle tsBoldBlue18 =
+  static TextStyle tsBoldSecondary18 =
       new TextStyle(color: colorSecondary, fontWeight: FontWeight.bold, fontSize: 18);
   static TextStyle tsBoldBlack18 =
       new TextStyle(color: colorBlack, fontWeight: FontWeight.bold, fontSize: 18);
@@ -24,8 +24,8 @@ class StylesElements {
   static TextStyle tsBoldBlack = new TextStyle(color: colorBlack, fontWeight: FontWeight.bold);
   static TextStyle tsBoldWhite = new TextStyle(color: Colors.white, fontWeight: FontWeight.bold);
   // Texto Normal
-  static TextStyle tsNormalGreen = new TextStyle(color: colorPrimary);
-  static TextStyle tsNormalBlue = new TextStyle(color: colorSecondary);
+  static TextStyle tsNormalPrimary = new TextStyle(color: colorPrimary);
+  static TextStyle tsNormalSecondary = new TextStyle(color: colorSecondary);
   static TextStyle tsNormalWhite = new TextStyle(color: Colors.white);
   static TextStyle tsNormalBlack = new TextStyle(color: colorBlack);
 
@@ -34,11 +34,7 @@ class StylesElements {
     'email': Icons.mail_outline,
     'passwordVisible': Icons.lock_outline,
     'passwordInvisible': Icons.lock_open,
-    'product': FontAwesomeIcons.registered,
-    'description': Icons.description,
-    'price': Icons.attach_money,
-    'stock': FontAwesomeIcons.cubes,
-    'add': Icons.add
+    'city': Icons.location_city_rounded
   };
   static Icon getIcon(String nombreIcono) {
     return Icon(
